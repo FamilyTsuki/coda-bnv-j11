@@ -47,16 +47,19 @@ number *create_list(int value)
 }
 
 int main() {
-    number *list = create_list(10);
+    number *list = create_list(10)
+    ;
     int n;
-    printf("1 pour ecrir 2 pour aficher \n");
+    int n1;
+    while(n1 != 2){
+    printf("0 pour ecrir 1 pour aficher 2 pour leave\n");
     printf("ecrire un nombre \n");
-    scanf('d%',&n);
+    scanf("%d",&n);
     if (n == 0){
-        int n1;
+        
     printf("ecrire un nombre\n");
-    scanf('d%',&n1);
-    add_to_end(&list, 20);
+    scanf("%d",&n1);
+    add_to_end(&list, n1);
         
 
     }
@@ -64,7 +67,7 @@ int main() {
         display_list(&list);
 
     }
-    
+}
     
     
     
