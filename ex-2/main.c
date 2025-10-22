@@ -48,25 +48,9 @@ number *create_list(int value)
 
 int main() {
     number *list = create_list(10);
-    int n;
-    printf("1 pour ecrir 2 pour aficher \n");
-    printf("ecrire un nombre \n");
-    scanf('d%',&n);
-    if (n == 0){
-        int n1;
-    printf("ecrire un nombre\n");
-    scanf('d%',&n1);
+    display_list(&list);
     add_to_end(&list, 20);
-        
-
-    }
-    else if (n == 1){
-        display_list(&list);
-
-    }
-    
-    
-    
+    display_list(&list);
     
 
 }
